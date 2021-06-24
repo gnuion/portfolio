@@ -1,0 +1,6 @@
+{
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Operator Mono Lig",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

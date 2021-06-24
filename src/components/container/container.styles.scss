@@ -1,0 +1,75 @@
+$bg-primary: rgb(10, 10, 10);
+$bg-secondary: rgba(255, 255, 255, 0.061);
+
+.grid-container {
+  height: 1800px;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+
+  grid-template: 1fr 1fr 2fr 2fr 1fr / auto auto;
+  background-color: $bg-primary;
+  // padding: 0;
+
+  & > div {
+    background-color: $bg-secondary;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .div1 {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: -10px;
+
+    .profile {
+      height: 200px;
+      width: 20vw;
+      font-family: "Montserrat";
+
+      .avatar {
+        width: 300px;
+        border-radius: 50%;
+        background: linear-gradient(to right, rgb(255, 94, 0), purple);
+        padding: 6px;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        color: rgb(221, 55, 14);
+        font-size: 3rem;
+        span {
+          font-weight: normal;
+        }
+      }
+      h2 {
+        color: white;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        font-size: 1.5rem;
+        margin-top: -30px;
+      }
+    }
+
+    .about-me {
+      font-size: 1.4rem;
+      padding: 0 40px;
+      width: 66vw;
+      text-align: left;
+      color: white;
+    }
+  }
+  .div2 {
+    background-color: $bg-primary;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    z-index: -1;
+  }
+  .div3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
